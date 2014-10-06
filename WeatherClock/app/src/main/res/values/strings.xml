@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">WeatherClock</string>
+    <string name="app_name">weather</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_refresh" translatable="false">Refresh</string>
+    <string name="title_activity_weather_detail">WeatherDetail</string>
+    <string name="title_activity_setting"> Settings</string>
+    <string name="pref_location_key"> location</string>
+    <string name="pref_location_lable"> location</string>
+    <string name="pref_location_default"> v6x2s4</string>
 
 </resources>
