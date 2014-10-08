@@ -1,4 +1,4 @@
-package com.example.ishpreet.weather;
+package ca.bcit.www.weatherclock;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +15,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new ForecastFragment())
+                    .add(R.id.container, new  ca.bcit.www.weatherclock.ForecastFragment())
                     .commit();
         }
     }
@@ -35,7 +35,7 @@ public class MainActivity extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         if (id == R.id.action_settings) {
-            startActivity(new Intent(this, Setting.class));
+            startActivity(new Intent(this,  ca.bcit.www.weatherclock.Setting.class));
             return true;
         }
         return super.onOptionsItemSelected(item);

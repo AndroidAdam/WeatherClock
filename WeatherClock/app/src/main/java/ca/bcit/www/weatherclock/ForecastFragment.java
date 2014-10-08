@@ -1,4 +1,5 @@
-package com.example.ishpreet.weather;
+package ca.bcit.www.weatherclock;
+import ca.bcit.www.weatherclock.R;
 
 import android.content.SharedPreferences;
 import android.net.Uri;

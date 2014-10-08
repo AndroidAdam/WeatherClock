@@ -11,4 +11,8 @@
     <string name="pref_location_lable"> location</string>
     <string name="pref_location_default"> v6x2s4</string>
 
+
+    <!-- Temp -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
