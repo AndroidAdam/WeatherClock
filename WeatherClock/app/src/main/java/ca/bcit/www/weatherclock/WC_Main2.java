@@ -19,11 +19,10 @@ public class WC_Main2 extends FragmentActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_wc_main2);
+
         List<Fragment> fragments = getFragments();
         pageAdapter = new WCPageAdapter(getSupportFragmentManager(), fragments);
-
         ViewPager pager = (ViewPager) findViewById(R.id.vpager_top);
-
         pager.setAdapter(pageAdapter);
     }
 

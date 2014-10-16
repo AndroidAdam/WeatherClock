@@ -50,8 +50,6 @@ public class ForecastFragment extends Fragment {
         weatherTask.execute("location");
     }
 
-
-
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.forecastfragment, menu);
