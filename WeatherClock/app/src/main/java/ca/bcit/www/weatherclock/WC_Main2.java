@@ -6,9 +6,6 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import java.util.ArrayList;
 import java.util.List;
-import ca.bcit.www.weatherclock.AlarmsFrag;
-import ca.bcit.www.weatherclock.ClockFrag;
-import ca.bcit.www.weatherclock.R;
 
 public class WC_Main2 extends FragmentActivity {
 
@@ -18,7 +15,7 @@ public class WC_Main2 extends FragmentActivity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_wc_main2);
+        setContentView(R.layout.activity_wc_main2);
 
         List<Fragment> fragments = getFragments();
         pageAdapter = new WCPageAdapter(getSupportFragmentManager(), fragments);

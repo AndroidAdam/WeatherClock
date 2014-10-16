@@ -1,5 +1,4 @@
 package ca.bcit.www.weatherclock;
-import ca.bcit.www.weatherclock.R;
 
 import android.content.SharedPreferences;
 import android.net.Uri;
@@ -94,7 +93,7 @@ public class ForecastFragment extends Fragment {
                 R.layout.list_item_forcast,
                 R.id.list_item_forecast_textview,
                 weekForecast);
-        View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_weather_main, container, false);
 
         ListView listView = (ListView) rootView.findViewById(R.id.listview_forecast);
         listView.setAdapter(mForecastAdapter);
