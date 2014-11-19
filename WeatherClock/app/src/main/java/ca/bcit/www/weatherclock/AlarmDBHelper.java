@@ -1,11 +1,8 @@
-package com.example.adam.myapplication;
+package ca.bcit.www.weatherclock;
 
 /**
  * Created by Adam on 05/10/2014.
  */
-import java.util.ArrayList;
-import java.util.List;
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -13,7 +10,10 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.net.Uri;
 
-import com.example.adam.myapplication.AlarmContract.Alarm;
+import java.util.ArrayList;
+import java.util.List;
+
+import ca.bcit.www.weatherclock.AlarmContract.Alarm;
 
 public class AlarmDBHelper extends SQLiteOpenHelper {
 

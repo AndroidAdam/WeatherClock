@@ -1,19 +1,15 @@
-package com.example.adam.myapplication;
+package ca.bcit.www.weatherclock;
 
+import android.app.AlertDialog;
+import android.app.ListActivity;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
-
-        import android.app.AlertDialog;
-        import android.app.ListActivity;
-        import android.content.Context;
-        import android.content.DialogInterface;
-        import android.content.DialogInterface.OnClickListener;
-        import android.content.Intent;
-        import android.os.Bundle;
-        import android.view.Menu;
-        import android.view.MenuItem;
-        import android.view.Window;
-
-import com.trigg.alarmclock.R;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.Window;
 
 public class AlarmListActivity extends ListActivity {
 

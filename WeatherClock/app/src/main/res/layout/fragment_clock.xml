@@ -1,4 +1,4 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,6 +9,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_gravity="top"
         android:background="#334477">
 
@@ -25,6 +26,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:layout_gravity="center">
 
         <TextClock
@@ -41,9 +43,27 @@
     </FrameLayout>
 
     <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#777777"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="@+string/swipe_alarms"/>
+
+        </FrameLayout>
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
         android:background="#334477">
         <TextView
             android:layout_width="wrap_content"
@@ -55,4 +75,4 @@
 
     </FrameLayout>
 
-</FrameLayout>
+</RelativeLayout>

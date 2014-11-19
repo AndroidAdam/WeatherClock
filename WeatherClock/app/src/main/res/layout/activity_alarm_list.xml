@@ -8,8 +8,20 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".AlarmListActivity" >
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List of Alarms: "
+        android:textSize="30dp"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
     <ListView android:id="@android:id/list"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"/>
+
 
 </RelativeLayout>

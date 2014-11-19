@@ -8,8 +8,7 @@
     <RelativeLayout
         android:id="@+id/custom_switch_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/view_touch_selector" >
+        android:layout_height="wrap_content">
 
         <CheckBox
             android:id="@+id/custom_switch_button"

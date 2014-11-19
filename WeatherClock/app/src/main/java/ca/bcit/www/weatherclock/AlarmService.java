@@ -1,4 +1,4 @@
-package com.example.adam.myapplication;
+package ca.bcit.www.weatherclock;
 
 import android.app.Service;
 import android.content.Intent;

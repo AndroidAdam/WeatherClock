@@ -1,5 +1,6 @@
 package ca.bcit.www.weatherclock;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -13,6 +14,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -45,8 +48,13 @@ public class ForecastFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         setHasOptionsMenu(true);
+        //FetchWeatherTask weatherTask = new FetchWeatherTask();
+        //weatherTask.execute("location");
         FetchWeatherTask weatherTask = new FetchWeatherTask();
-        weatherTask.execute("location");
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        String location = prefs.getString(getString(R.string.pref_location_key),
+                getString(R.string.pref_location_default));
+        weatherTask.execute(location);
     }
 
     @Override
@@ -58,6 +66,7 @@ public class ForecastFragment extends Fragment {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         int id = item.getItemId();
+        //REFRESH
         if (id == R.id.action_refresh) {
             FetchWeatherTask weatherTask = new FetchWeatherTask();
             SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
@@ -66,11 +75,14 @@ public class ForecastFragment extends Fragment {
             weatherTask.execute(location);
             return true;
         }
+        //SETTINGS
+        if (id == R.id.action_settings) {
+            startActivity(new Intent(this.getActivity(), Setting.class));
+            //startActivity(new Intent(this, Setting.class));
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
-
-
-
 
 
     @Override
@@ -97,6 +109,16 @@ public class ForecastFragment extends Fragment {
 
         ListView listView = (ListView) rootView.findViewById(R.id.listview_forecast);
         listView.setAdapter(mForecastAdapter);
+
+        listView.setOnItemClickListener(new OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(getActivity(), Forecast_Single.class);
+                Bundle weatherBundle = new Bundle();
+                startActivity(intent);
+            }
+        });
+
         return rootView;
     }
 
@@ -109,7 +131,6 @@ public class ForecastFragment extends Fragment {
             SimpleDateFormat format = new SimpleDateFormat("E, MMM d");
             return format.format(date).toString();
         }
-
 
         private String formatHighLows(double high, double low) {
 
@@ -242,6 +263,11 @@ public class ForecastFragment extends Fragment {
                 e.printStackTrace();
             }
             return null;
+        }
+
+        private void updateWeather()
+        {
+            Log.d("FORECAST", "RESFRESH WEATHER");
         }
 
         @Override

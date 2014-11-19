@@ -44,10 +44,12 @@
         <View
             android:id="@+id/divider2"
             style="@style/Divider"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/alarm_details_name" />
 
-        <com.example.adam.myapplication.CustomSwitch
+        <ca.bcit.www.weatherclock.CustomSwitch
             android:id="@+id/alarm_details_repeat_weekly"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -63,7 +65,7 @@
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/alarm_details_repeat_weekly" />
 
-        <com.example.adam.myapplication.CustomSwitch
+        <ca.bcit.www.weatherclock.CustomSwitch
             android:id="@+id/alarm_details_repeat_sunday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -73,7 +75,7 @@
             android:checked="true"
             android:text="@string/details_sunday" />
 
-        <com.example.adam.myapplication.CustomSwitch
+        <ca.bcit.www.weatherclock.CustomSwitch
             android:id="@+id/alarm_details_repeat_monday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -83,7 +85,7 @@
             android:checked="true"
             android:text="@string/details_monday" />
 
-        <com.example.adam.myapplication.CustomSwitch
+        <ca.bcit.www.weatherclock.CustomSwitch
             android:id="@+id/alarm_details_repeat_tuesday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -93,7 +95,7 @@
             android:checked="true"
             android:text="@string/details_tuesday" />
 
-        <com.example.adam.myapplication.CustomSwitch
+        <ca.bcit.www.weatherclock.CustomSwitch
             android:id="@+id/alarm_details_repeat_wednesday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -103,7 +105,7 @@
             android:checked="true"
             android:text="@string/details_wednesday" />
 
-        <com.example.adam.myapplication.CustomSwitch
+        <ca.bcit.www.weatherclock.CustomSwitch
             android:id="@+id/alarm_details_repeat_thursday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -113,7 +115,7 @@
             android:checked="true"
             android:text="@string/details_thursday" />
 
-        <com.example.adam.myapplication.CustomSwitch
+        <ca.bcit.www.weatherclock.CustomSwitch
             android:id="@+id/alarm_details_repeat_friday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -123,7 +125,7 @@
             android:checked="true"
             android:text="@string/details_friday" />
 
-        <com.example.adam.myapplication.CustomSwitch
+        <ca.bcit.www.weatherclock.CustomSwitch
             android:id="@+id/alarm_details_repeat_saturday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -145,7 +147,6 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/divider4"
-            android:background="@drawable/view_touch_selector"
             android:orientation="vertical" >
 
             <TextView

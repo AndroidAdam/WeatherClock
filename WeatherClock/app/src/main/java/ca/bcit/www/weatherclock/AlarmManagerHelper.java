@@ -1,14 +1,14 @@
-package com.example.adam.myapplication;
+package ca.bcit.www.weatherclock;
 
-        import java.util.Calendar;
-        import java.util.List;
+import android.annotation.SuppressLint;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
 
-        import android.annotation.SuppressLint;
-        import android.app.AlarmManager;
-        import android.app.PendingIntent;
-        import android.content.BroadcastReceiver;
-        import android.content.Context;
-        import android.content.Intent;
+import java.util.Calendar;
+import java.util.List;
 
 public class AlarmManagerHelper extends BroadcastReceiver {
 

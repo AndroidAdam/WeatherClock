@@ -1,4 +1,4 @@
-package com.example.adam.myapplication;
+package ca.bcit.www.weatherclock;
 
 /**
  * Created by Adam on 05/10/2014.
@@ -16,7 +16,7 @@ import android.widget.RelativeLayout;
 import android.widget.Switch;
 import android.widget.TextView;
 
-import com.trigg.alarmclock.R;
+//import com.trigg.alarmclock.R;
 
 @SuppressLint("NewApi")
 public class CustomSwitch extends FrameLayout {
@@ -39,8 +39,6 @@ public class CustomSwitch extends FrameLayout {
                 button.toggle();
             }
         });
-
-        layout.setBackgroundResource(R.drawable.view_touch_selector);
 
         //Initalise and configure compound button
         if (android.os.Build.VERSION.SDK_INT > android.os.Build.VERSION_CODES.ICE_CREAM_SANDWICH) {

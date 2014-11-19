@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/alarm_item_time"
-            android:text="S"
+            android:text=" Su "
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <TextView
@@ -45,7 +45,7 @@
             android:layout_toRightOf="@+id/alarm_item_sunday"
             android:layout_below="@+id/alarm_item_time"
             android:layout_marginLeft="4dp"
-            android:text="M"
+            android:text=" M "
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <TextView
@@ -55,7 +55,7 @@
             android:layout_toRightOf="@+id/alarm_item_monday"
             android:layout_below="@+id/alarm_item_time"
             android:layout_marginLeft="4dp"
-            android:text="T"
+            android:text=" Tu "
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <TextView
@@ -65,7 +65,7 @@
             android:layout_toRightOf="@+id/alarm_item_tuesday"
             android:layout_below="@+id/alarm_item_time"
             android:layout_marginLeft="4dp"
-            android:text="W"
+            android:text=" W "
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <TextView
@@ -75,7 +75,7 @@
             android:layout_toRightOf="@+id/alarm_item_wednesday"
             android:layout_below="@+id/alarm_item_time"
             android:layout_marginLeft="4dp"
-            android:text="T"
+            android:text=" Th "
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <TextView
@@ -85,7 +85,7 @@
             android:layout_toRightOf="@+id/alarm_item_thursday"
             android:layout_below="@+id/alarm_item_time"
             android:layout_marginLeft="4dp"
-            android:text="F"
+            android:text=" F "
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <TextView
@@ -95,7 +95,7 @@
             android:layout_toRightOf="@+id/alarm_item_friday"
             android:layout_below="@+id/alarm_item_time"
             android:layout_marginLeft="4dp"
-            android:text="S"
+            android:text=" Sa "
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <ToggleButton

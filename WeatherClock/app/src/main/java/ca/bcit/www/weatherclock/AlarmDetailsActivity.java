@@ -1,4 +1,4 @@
-package com.example.adam.myapplication;
+package ca.bcit.www.weatherclock;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,8 +13,6 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.TimePicker;
-
-import com.trigg.alarmclock.R;
 
 public class AlarmDetailsActivity extends Activity {
 

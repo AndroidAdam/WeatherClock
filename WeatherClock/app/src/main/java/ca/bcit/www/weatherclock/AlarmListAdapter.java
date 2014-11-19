@@ -1,9 +1,8 @@
-package com.example.adam.myapplication;
+package ca.bcit.www.weatherclock;
 
 /**
  * Created by Adam on 05/10/2014.
  */
-import java.util.List;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -18,7 +17,7 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
-import com.trigg.alarmclock.R;
+import java.util.List;
 
 public class AlarmListAdapter extends BaseAdapter {
 

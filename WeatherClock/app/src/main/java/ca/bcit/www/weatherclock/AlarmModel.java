@@ -1,4 +1,4 @@
-package com.example.adam.myapplication;
+package ca.bcit.www.weatherclock;
 
 /**
  * Created by Adam on 05/10/2014.

@@ -1,4 +1,4 @@
-package com.example.adam.myapplication;
+package ca.bcit.www.weatherclock;
 
 /**
  * Created by Adam on 05/10/2014.
@@ -15,12 +15,10 @@ import android.os.PowerManager;
 import android.os.PowerManager.WakeLock;
 import android.util.Log;
 import android.view.View;
-import android.view.WindowManager;
 import android.view.View.OnClickListener;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
-
-import com.trigg.alarmclock.R;
 
 public class AlarmScreen extends Activity {
 
